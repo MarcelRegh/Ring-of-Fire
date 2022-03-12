@@ -1,7 +1,7 @@
 {
   "hosting": {
     "target": "Ring-of-Fire",
-    "public": "dist/ring-of-fire",
+    "public": "dist",
     "ignore": [
       "**/.*"
     ],
