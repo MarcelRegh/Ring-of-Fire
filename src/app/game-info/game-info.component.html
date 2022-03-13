@@ -1,4 +1,6 @@
 <mat-card>
-    <mat-card-title>{{ card ? title : 'Please pick a card'}}</mat-card-title> <!-- Between {{  }} is a fast if else question -->
-    <mat-card-content>{{ card ? description : 'Please click on the card stack to selcet the next card.'}}</mat-card-content>
+    <div class="description">
+        <mat-card-title>{{ card ? title : 'Please pick a card'}}</mat-card-title> <!-- Between {{  }} is a fast if else question -->
+        <mat-card-content>{{ card ? description : 'Please click on the card stack to selcet the next card.'}}</mat-card-content>
+    </div>
 </mat-card>

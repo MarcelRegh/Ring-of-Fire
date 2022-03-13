@@ -55,6 +55,36 @@
 .playerPosition {
     position: absolute;
     right: 0;
+    overflow: hidden;
+}
+
+.playersDesktop {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+
+    app-player {
+        margin-top:  16px;
+    }
+}
+
+.playersMobile {
+    height: 70px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    app-player {
+        margin-right: 16px;
+    }
 }
 
 .addBtn {
@@ -123,14 +153,15 @@
 
     .gameInfo {
         position: absolute;
-        bottom: 0px;
-        left: 0px;
-        right: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
     .playerPosition {
         position: absolute;
         top: 0 !important;
+        overflow-y: scroll;
     }
 
     .hideMobile {
