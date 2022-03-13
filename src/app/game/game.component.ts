@@ -60,6 +60,8 @@ export class GameComponent implements OnInit {
         this.pushPlayedCard();
       }, 1000);
       this.saveGame();
+    } else {
+      alert('add a Player first');
     }
   }
 
